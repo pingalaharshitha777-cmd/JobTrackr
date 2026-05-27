@@ -1,4 +1,4 @@
-# JobTrackr — Product Case Study
+# JobTrackr
 
 **Live Demo:** https://jobtrackr-b119.onrender.com  
 **Built by:** Harshitha Pingala
