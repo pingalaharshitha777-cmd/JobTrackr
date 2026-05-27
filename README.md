@@ -2,7 +2,6 @@
 
 **Live Demo:** https://jobtrackr-b119.onrender.com  
 **Built by:** Harshitha Pingala
-
 **Stack:** TypeScript, Express.js, Vite, Node.js  
 **Tools:** Google AI Studio, VS Code  
 
