@@ -1,0 +1,86 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+:root {
+  --bg: #0f172a;
+  --surface: #1e293b;
+  --border: #334155;
+  --text: #f8fafc;
+  --text-muted: #94a3b8;
+  --primary: #3b82f6;
+  --accent: #8b5cf6;
+  --warning: #f59e0b;
+  --success: #10b981;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.kanban-column {
+  @apply bg-transparent flex flex-col gap-3 min-w-[240px] flex-shrink-0;
+}
+
+.status-card {
+  @apply bg-[#1e293b] border border-[#334155] p-4 rounded-xl shadow-sm hover:border-[#3b82f6] transition-all cursor-pointer flex flex-col gap-2;
+}
+
+.sidebar-nav-item {
+  @apply px-6 py-3 text-sm text-[#94a3b8] flex items-center gap-3 border-l-2 border-transparent transition-all;
+}
+
+.sidebar-nav-item.active {
+  @apply text-[#f8fafc] bg-[rgba(59,130,246,0.05)] border-l-[#3b82f6];
+}
+
+.btn-primary {
+  @apply bg-[#3b82f6] text-white px-5 py-2 rounded-lg font-semibold text-sm hover:bg-[#2563eb] transition-colors;
+}
+
+.badge {
+  @apply text-[10px] px-2 py-0.5 rounded font-bold uppercase tracking-wider border;
+}
+
+.badge-due {
+  @apply bg-[rgba(245,158,11,0.1)] text-[#f59e0b] border-[rgba(245,158,11,0.3)];
+}
+
+.badge-status {
+  @apply bg-[rgba(148,163,184,0.1)] text-[#94a3b8] border-[#334155];
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+

@@ -1,0 +1,8 @@
+{
+  "name": "JobTrackr",
+  "description": "A high-velocity job application tracker with automated follow-up nudges, Kanban pipeline, and detailed performance analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
