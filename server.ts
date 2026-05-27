@@ -7,7 +7,8 @@ import { addDays, format, parseISO, isAfter } from 'date-fns';
 const app = express();
 app.use(express.json());
 
-const PORT = 3000;
+//const PORT = 3000;
+const PORT = Number(process.env.PORT) || 3000;
 
 const DEFAULT_MILESTONES: ApplicationMilestones = {
   recruiterEmailed: false,
